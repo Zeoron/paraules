@@ -1,5 +1,5 @@
 package net.sergio.contarlletres;
-//Soc en Sergio Rovira
+//Soc en Sergio
 public class ContarLletres {
 //Em dic Rovira Sergio
 	private static final String STRING = "Hola 5hola que passa aqui 6hola5";
@@ -9,16 +9,14 @@ public class ContarLletres {
 		int contadorNumeros = 0; //CONTADOR DELS NUMEROS
 		for (int i = 0; i<STRING.length();i++) {
 			char temp = STRING.charAt(i);
-			if (esEnter(temp)) { //IF QUE CONTROLA LA DETECCIÓ DELS NUMEROS
-				contadorNumeros ++;
-			} else if(!(comprovaRepetides(temp, lletres))) {
+			if(!(comprovaRepetides(temp, lletres))) {
 				lletres = lletres + temp;
 			}
 		}
 		lletresRepetides(STRING, lletres);
 		System.out.println("Hi han " + contadorNumeros + " numeros");
 	}
-	private static boolean esEnter(char temp) { //METODE QUE REALITZA LA COMPROVACIÓ
+	private static boolean esEnter(char temp) { //METODE QUE REALITZA LA COMPROVACIÃ“
 		try {
 			String stringTemp = "" + temp;
 			Integer.parseInt(stringTemp);
