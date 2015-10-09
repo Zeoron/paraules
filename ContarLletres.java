@@ -1,5 +1,5 @@
 package net.sergio.contarlletres;
-//Soc en Sergio
+//AASoc en Sergio
 public class ContarLletres {
 //Em dic Rovira Sergio
 	private static final String STRING = "Hola 5hola que passa aqui 6hola5";
