@@ -1,7 +1,7 @@
 package net.sergio.contarlletres;
-//Soc en Sergio
+//Soc en Sergio Rovira
 public class ContarLletres {
-//Em dic Sergio
+//Em dic Rovira Sergio
 	private static final String STRING = "Hola 5hola que passa aqui 6hola5";
 	
 	public static void main(String[] args) {
