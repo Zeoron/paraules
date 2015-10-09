@@ -1,7 +1,7 @@
 package net.sergio.contarlletres;
 //Soc en Sergio
 public class ContarLletres {
-
+//Hola hola
 	private static final String STRING = "Hola hola hola";
 	
 	public static void main(String[] args) {
