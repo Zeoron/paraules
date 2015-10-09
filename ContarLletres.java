@@ -1,18 +1,32 @@
 package net.sergio.contarlletres;
 
 public class ContarLletres {
-
-	private static final String STRING = "Hola hola hola";
+//Em dic Sergio
+	private static final String STRING = "Hola 5hola que passa aqui 6hola5";
 	
 	public static void main(String[] args) {
 		String lletres ="";
+		int contadorNumeros = 0; //CONTADOR DELS NUMEROS
 		for (int i = 0; i<STRING.length();i++) {
 			char temp = STRING.charAt(i);
-			if(!(comprovaRepetides(temp, lletres))) {
+			if (esEnter(temp)) { //IF QUE CONTROLA LA DETECCIÓ DELS NUMEROS
+				contadorNumeros ++;
+			} else if(!(comprovaRepetides(temp, lletres))) {
 				lletres = lletres + temp;
 			}
 		}
 		lletresRepetides(STRING, lletres);
+		System.out.println("Hi han " + contadorNumeros + " numeros");
+	}
+	private static boolean esEnter(char temp) { //METODE QUE REALITZA LA COMPROVACIÓ
+		try {
+			String stringTemp = "" + temp;
+			Integer.parseInt(stringTemp);
+			return true;
+		}catch (Exception e) {
+			return false;
+		}
+			
 	}
 	private static void lletresRepetides(String string2, String lletres) {
 		for (int i = 0; i<lletres.length();i++) {
